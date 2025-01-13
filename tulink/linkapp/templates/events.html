@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Events - Tu-Link App{% endblock %}
+
+{% block content %}
+    <div class="events-list">
+        <h2>Upcoming Events</h2>
+        {% for event in events %}
+            <div class="event-card">
+                <h4>{{ event.title }}</h4>
+                <p>{{ event.description }}</p>
+                <p><strong>Time:</strong> {{ event.start_time }}</p>
+                <p><strong>Location:</strong> {{ event.location }}</p>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

@@ -1,0 +1,144 @@
+/* static/css/style.css */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    border-bottom: 2px solid #ddd;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: 500;
+    color: #110101 !important;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #f0ad4e !important;
+}
+
+footer {
+    background-color: #333;
+    color: #f9f9f9;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Profile Card */
+.profile-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 20px;
+}
+
+.profile-card h3 {
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.profile-card p {
+    color: #555;
+    margin-top: 10px;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 50px auto;
+}
+
+.form-container h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-container form p {
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 1rem;
+    }
+
+    .profile-card {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .form-container {
+        max-width: 90%;
+        padding: 20px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .profile-card img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .form-container {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    button {
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+}

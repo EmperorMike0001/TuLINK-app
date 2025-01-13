@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile - Tu-Link App{% endblock %}
+
+{% block content %}
+    <div class="profile-card">
+        <img src="{{ user.profile.profile_picture.url }}" alt="Profile Picture">
+        <h3>{{ user.username }}</h3>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Bio:</strong> {{ user.profile.bio }}</p>
+    </div>
+{% endblock %}
